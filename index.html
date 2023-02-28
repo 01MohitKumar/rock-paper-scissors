@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body class="bg-blue-50">
+
+    <!-- Heading -->
+
+    <section class="bg-indigo-500 text-white px-12 py-4 flex items-center justify-start space-x-8">
+        <img class="w-20 h-20 cursor-pointer" src="./store/rock-paper-scissors.png" alt="rock-paper-scissors">
+        <h1 class="cursor-pointer text-5xl text-rose-200 hover:text-rose-300">Mr. Mohit</h1>
+        <h1 class="cursor-pointer text-5xl">Let's Play Rock Paper Scissors</h1>
+    </section>
+
+    <!-- Game Hero -->
+
+    <section class=" w-3/4 m-auto px-12 py-4 flex justify-between">
+        <article class="flex flex-col items-center space-y-4">
+            <h2 class="text-5xl">You</h2>
+            <img id="user-choice" class="w-36 h-36" src="./store/rock.png" alt="rock">
+        </article>
+        <article class="flex flex-col items-center space-y-4">
+            <h2 class="text-5xl">Result</h2>
+            <img id="result" class="w-36 h-36" src="./store/draw.png" alt="win">
+        </article>
+        <article class="flex flex-col items-center space-y-4">
+            <h2 class="text-5xl">Computer</h2>
+            <img id="computer-choice" class="w-36 h-36" src="./store/rock.png" alt="rock">
+        </article>
+    </section>
+
+    <!-- <h2>Computer Choice: <span id="computer-choice"></span></h2>
+    <h2>Your Choice: <span id="user-choice"></span></h2>
+    <h2>Result: <span id="result"></span></h2> -->
+
+    <!-- Actions -->
+
+    <section class="w-1/2 text-center m-auto px-12 py-4">
+        <h2 class="text-5xl my-4">Choose One</h2>
+        <div class="flex justify-between">
+            <button>
+                <img class="action w-48 h-48" id="rock" src="./store/rock.png" alt="rock">
+            </button>
+            <button>
+                <img class="action w-48 h-48" id="paper" src="./store/paper.png" alt="paper">
+            </button>
+            <button>
+                <img class="action w-48 h-48" id="scissors" src="store/scissors.png" alt="scissors">
+            </button>
+        </div>
+    </section>
+
+
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
